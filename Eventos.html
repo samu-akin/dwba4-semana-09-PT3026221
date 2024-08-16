@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="Eventos.html">EVENTOS</a></li>
+      <li><a href="contato.html">CONTATO</a></li>
+      <li class="submenu-item">
+        <<a href="#">CURSOS</a>
+        <ul class="submenu">
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+        </ul>
+      </li>
+      <li class="entrar"><a href="Entrar.html">ENTRAR</a></li>
+    </ul>
+  </div>
+  <br>
+  <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true"
+      alt="Instituto Federal de São Paulo" class="logo">
+
+
+  <h1>Inscreva-se</h1>
+
+  <form action="/enviar" method="post">
+  <fieldset>
+    <label for="evento">Evento:</label>
+    <select id="evento" name="evento">
+      <option value="evento1">--Selecione--</option>
+       <option value="evento2">Voe sem asas</option>
+      <option value="evento3">Festa Junina</option>
+      <option value="evento4">Semana da Tecnologia</option>
+    </select>
+  </fieldset>
+    <fieldset>
+      <legend>Informações de Acesso</legend>
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required><br><br>
+
+      <label for="senha1">Senha:</label>
+      <input type="password" id="senha1" name="senha1" required><br><br>
+
+      <label for="senha2">Confirme a Senha:</label>
+      <input type="password" id="senha2" name="senha2" required><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="celular">Celular:</label>
+      <input type="tel" id="celular" name="celular" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" required placeholder="(99)99999-9999"><br><br>
+
+      <fieldset>
+        <legend>Sexo:</legend>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+      </fieldset><br>
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+
+      <label for="corFavorita">Cor Favorita:</label>
+      <input type="color" id="corFavorita" name="corFavorita" value="#ff0000"><br><br>
+
+      <label for="github">Perfil no GitHub:</label>
+      <input type="url" id="github" name="github" placeholder="https://github.com/seu-usuario"><br><br>
+    </fieldset><br>
+
+    <input type="submit" value="Inscrever-se">
+    <input type="reset" value="Limpar">
+    <br><br>
+
+
+    <a href="https://www.facebook.com/ifsppirituba">
+      <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/facebook.png?raw=true" width="30px"
+        height="30px"  title="IFSP Facebook"/>
+    </a>
+
+
+    <footer>
+
+
+      <addres>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato:
+        (011) 2504-0100</addres>
+    </footer>
+</body>
+</html>
